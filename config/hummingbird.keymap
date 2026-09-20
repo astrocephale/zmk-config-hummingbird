@@ -491,7 +491,7 @@
             display-name = "Bl_space";
             bindings = <
                 &kp TAB          &kp HOME      &kp END       &kp LS(TAB)   &kp KP_N5     &none          &none          &none         &none          &kp DELETE
-                &kp LSHFT KP_DOT &kp LGUI N1   &kp LALT N2   &kp LCTRL N3  &kp KP_N0     &none          &hm RCTRL DOWN &hm LALT UP   &hm RGUI RIGHT &kp RSHFT
+                &hm LSHFT KP_DOT &hm LGUI N1   &hm LALT N2   &hm LCTRL N3  &kp KP_N0     &none          &hm RCTRL DOWN &hm LALT UP   &hm RGUI RIGHT &kp RSHFT
                                  &kp KP_N1     &kp KP_N3     &kp KP_N7                                  &kp LEFT       &none         &none
                                                              &hp LSHFT LC(BSPC) &trans   &lt MISC_L RET &kp LS(RET)
             >;
