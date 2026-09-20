@@ -481,7 +481,7 @@
             display-name = "Blender";
             bindings = <
                 &kp GRAVE   &kp E      &kp O      &kp P          &kp F             &kp J         &kp M       &kp D      &dead_key  &kp Y
-                &hm LSHFT A &hm LGUI G &hm LALT R &hm LCTRL S    &kp B             &kp L         &hm RCTRL R &hm LALT T &hm RGUI I &hm RSHFT U
+                &hm LSHFT A &hm LGUI G &hm LALT R &hm LCTRL S    &kp N             &kp L         &hm RCTRL R &hm LALT T &hm RGUI I &hm RSHFT U
                             &kp X      &kp Y      &kp Z                                          &kp H       &kp G      &com_scol
                                               &hp LSHFT BSPC     &lt BL_SP_L SPACE &lt SYM_L ESC &mo NUM_L
             >;
