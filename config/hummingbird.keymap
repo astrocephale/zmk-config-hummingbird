@@ -19,6 +19,7 @@
 #define DEAD_UP_L 8
 #define GAME_L 9
 #define BLENDER_L 10
+#define BL_SP_L 11
 
 #define COMPOSE_KEY RALT
 
@@ -339,13 +340,13 @@
         };
 
         combo_dot {
-            timeout-ms = <50>;
+            timeout-ms = <10>;
             key-positions = <23 24>;
             bindings = <&dot_col>;
         };
 
         combo_col {
-            timeout-ms = <50>;
+            timeout-ms = <10>;
             key-positions = <24 25>;
             bindings = <&kp COLON>;
         };
@@ -369,8 +370,8 @@
         };
 
         combo_blender {
-            timeout-ms = <50>;
-            key-positions = <12 13 14>;
+            timeout-ms = <25>;
+            key-positions = <11 12 13>;
             bindings = <&tog BLENDER_L>;
         };
     };
@@ -477,12 +478,22 @@
         };
 
         blender_layer {
-            display-name = "BLENDER";
+            display-name = "Blender";
             bindings = <
-                &kp Q       &kp C      &kp O      &kp P          &kp F            &kp J         &kp M       &kp D      &dead_key  &kp Y
-                &hm LSHFT A &hm LGUI X &hm LALT Y &hm LCTRL Z    &kp B            &kp L         &hm RCTRL R &hm LALT T &hm RGUI I &hm RSHFT U
-                            &kp G      &kp R      &kp S                                         &kp H       &kp G      &com_scol
-                                              &hp LSHFT BSPC     &lt NAV_L SPACE  &lt SYM_L ESC &mo NUM_L
+                &kp GRAVE   &kp E      &kp O      &kp P          &kp F             &kp J         &kp M       &kp D      &dead_key  &kp Y
+                &hm LSHFT A &hm LGUI G &hm LALT R &hm LCTRL S    &kp B             &kp L         &hm RCTRL R &hm LALT T &hm RGUI I &hm RSHFT U
+                            &kp X      &kp Y      &kp Z                                          &kp H       &kp G      &com_scol
+                                              &hp LSHFT BSPC     &lt BL_SP_L SPACE &lt SYM_L ESC &mo NUM_L
+            >;
+        };
+
+        blender_space_layer {
+            display-name = "Bl_space";
+            bindings = <
+                &kp TAB          &kp HOME      &kp END       &kp LS(TAB)   &kp KP_N5     &none          &none          &none         &none          &kp DELETE
+                &kp LSHFT KP_DOT &kp LGUI N1   &kp LALT N2   &kp LCTRL N3  &kp KP_N0     &none          &hm RCTRL DOWN &hm LALT UP   &hm RGUI RIGHT &kp RSHFT
+                                 &kp KP_N1     &kp KP_N3     &kp KP_N7                                  &kp LEFT       &none         &none
+                                                             &hp LSHFT LC(BSPC) &trans   &lt MISC_L RET &kp LS(RET)
             >;
         };
     };
