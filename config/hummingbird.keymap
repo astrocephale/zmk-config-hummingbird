@@ -480,10 +480,10 @@
         blender_space_layer {
             display-name = "Bl_space";
             bindings = <
-                &kp TAB          &kp HOME      &kp END       &kp LS(TAB)   &kp KP_N5     &none          &none          &none         &none          &kp DELETE
-                &hm LSHFT KP_DOT &hm LGUI N1   &hm LALT N2   &hm LCTRL N3  &kp KP_N0     &none          &hm RCTRL DOWN &hm LALT UP   &hm RGUI RIGHT &kp RSHFT
-                                 &kp KP_N1     &kp KP_N3     &kp KP_N7                                  &kp LEFT       &none         &none
-                                                             &hp LSHFT LC(BSPC) &trans   &trans         &trans
+                &kp TAB          &kp HOME      &kp END       &kp LS(TAB)   &kp KP_N5        &none      &none          &none         &none          &kp DELETE
+                &hm LSHFT KP_DOT &hm LGUI N1   &hm LALT N2   &hm LCTRL N3  &kp KP_N0        &none      &hm RCTRL DOWN &hm LALT UP   &hm RGUI RIGHT &kp RSHFT
+                                 &kp KP_N1     &kp KP_N3     &kp KP_N7                                 &kp LEFT       &none         &none
+                                                             &hp LSHFT LC(BSPC) &trans      &kp RET    &trans
             >;
         };
 
